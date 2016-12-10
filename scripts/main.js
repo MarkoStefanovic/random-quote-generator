@@ -45,7 +45,7 @@ $(function() {
     author: 'Jamie Zawinski',
     link: 'https://en.wikipedia.org/wiki/Jamie_Zawinski'
   }, {
-    quote: 'The first 90p of the code accounts for the first 90p of the development time. The remaining 10p of the code accounts for the other 90p of the development time.',
+    quote: 'The first 90p of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time.',
     author: 'Tom Cargill',
     link: 'https://en.wikipedia.org/wiki/Ninety-ninety_rule'
   }, {
