@@ -152,7 +152,7 @@ body {
 
 @media (min-width: 769px) {
   body {
-    background: #051D29 url("/images/back.png") repeat 300% 300%;
+    background: #051D29 url(/images/back.png") repeat 300% 300%;
     -webkit-animation: ScanLine 10s ease-in-out infinite;
     animation: ScanLine 10s ease-in-out infinite;
   }
