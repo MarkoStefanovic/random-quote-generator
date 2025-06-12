@@ -147,5 +147,41 @@ $(function() {
 
   });
 
+  // search widget
+  $('#searchForm').on('submit', function(e) {
+    e.preventDefault();
+    var query = $('#searchInput').val();
+    if (!query) {
+      return;
+    }
+    $('#searchResults').html('<p>Loading...</p>');
+    $.ajax({
+      url: 'https://api.duckduckgo.com/',
+      dataType: 'jsonp',
+      jsonp: 'callback',
+      data: {
+        q: query,
+        format: 'json'
+      },
+      success: function(data) {
+        var html = '<ul>';
+        var topics = data.RelatedTopics || [];
+        for (var i = 0; i < topics.length; i++) {
+          var t = topics[i];
+          if (t.Text) {
+            html += '<li><a href="' + t.FirstURL + '" target="_blank">' + t.Text + '</a></li>';
+          } else if (t.Topics) {
+            for (var j = 0; j < t.Topics.length; j++) {
+              var st = t.Topics[j];
+              html += '<li><a href="' + st.FirstURL + '" target="_blank">' + st.Text + '</a></li>';
+            }
+          }
+        }
+        html += '</ul>';
+        $('#searchResults').html(html);
+      }
+    });
+  });
+
 
 });
