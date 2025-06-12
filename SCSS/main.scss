@@ -181,7 +181,7 @@ $spray: #93EDF5;
 $picton-blue: #4BA0E3;
 $iceberg:#d9f2f4;
 $dairy-cream:#F7E3AF;
-$blosom: #D4AFB9;
+$blossom: #D4AFB9;
 $burnt-siennaRGBA:rgba(240, 93, 94, 0.78);
 $cream-canRGBA: rgba(239, 199, 97, 0.78);
 $curious-blueRGBA: rgba(16, 81, 139, 0.78);
@@ -281,7 +281,7 @@ body{
     @include neon-border($picton-blue,$curious-blueRGBA,'true',4px,2px);
   }
   &.red{
-    @include neon-border($blosom,$burnt-siennaRGBA,'false',2px,1px);
+    @include neon-border($blossom,$burnt-siennaRGBA,'false',2px,1px);
   }
 
 }
@@ -369,7 +369,7 @@ main{
       text-align: center;
       >span{
         color: black;
-        background: $blosom;
+        background: $blossom;
         font-weight: bold;
         text-transform: uppercase;
         text-shadow: none;
@@ -437,12 +437,12 @@ footer{
 
   // when clicked on new quote
   .opened{
-    color:$blosom;
+    color:$blossom;
     text-shadow: 0px 0px 5px $burnt-siennaRGBA;
     .module{
       transition: background 2s,border 2s;
-      background: $blosom;
-      @include neon-border($blosom,$burnt-siennaRGBA,'false',2px,1px);
+      background: $blossom;
+      @include neon-border($blossom,$burnt-siennaRGBA,'false',2px,1px);
     }
   }
 }
