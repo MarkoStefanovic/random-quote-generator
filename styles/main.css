@@ -482,3 +482,40 @@ footer {
 }
 
 /* ############ END/MEMORY MODULE  ############## */
+
+/* ############ SEARCH WIDGET  ############## */
+.search-widget {
+  float: left;
+  margin: 5px;
+  width: 95vw;
+}
+
+@media (min-width: 768px) {
+  .search-widget {
+    width: 600px;
+  }
+}
+
+#searchForm input[type="text"] {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #93EDF5;
+  background: transparent;
+  color: #93EDF5;
+  box-shadow: 0px 0px 4px 2px rgba(16, 81, 139, 0.78);
+}
+
+#searchResults ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#searchResults li {
+  margin: 5px 0;
+}
+
+#searchResults a {
+  color: #93EDF5;
+}
+
+/* ############ END/SEARCH WIDGET  ############## */
